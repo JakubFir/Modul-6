@@ -26,9 +26,8 @@ public class CollectionTestSuite {
         //When
         List<Integer> result = exterminator.exterminate(numbers);
         //Then
-        if(result.size() == 0 ) {
-            Assertions.fail("List is empty");
-        }
+        int size = result.size();
+        Assertions.assertEquals(0,size);
     }
     @DisplayName("when odd numbers exterminator has normal list")
     @Test
